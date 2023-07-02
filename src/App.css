@@ -1,38 +1,142 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    /* background-color: #6db4f2;
+    background-image: url("https://transparenttextures.com/patterns/arabesque.png");
+     background-image: url(assets/img.jpg);  */
+    overflow: auto;
+}
+
+.headerStyle {
+    /* background-color: #f5ba13; */
+    background-color: #0504aa;
+    margin: auto -1px !important;
+    padding: 16px 32px !important;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 3);
+}
+
+.headingStyle {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+}
+
+form {
+    position: relative;
+    /* min-width: 480px;
+    width: auto; */
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+}
+
+form button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #0504aa;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
+
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    height: 150px;
+    min-width: auto;
+    width: 300px;
+    margin: 16px;
+    float: left;
+    overflow: auto;
+}
+
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note button {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color: #0504aa;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+}
+
+.footerStyle {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: #ccc;
 }
